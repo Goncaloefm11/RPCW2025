@@ -2,7 +2,7 @@
 
 **Data:** 2026-02-04
 **Unidade Curricular:** Representação e Processamento de Conhecimento na Web (RPCW2025)
-**Autor:** Gonçalo Emanuel Ferreira Magalhães (Pg16524)
+**Autor:** Gonçalo Emanuel Ferreira Magalhães (Pg61524)
 
 ## Resumo
 Este trabalho consistiu na criação de uma ontologia baseada numa história sobre a aprendizagem de línguas na Universidade do Minho. O objetivo foi modelar classes, propriedades e indivíduos no software **Protégé** e exportar o resultado no formato Turtle (TTL). Adicionalmente, foi explorada a geração automática de ontologias a partir de datasets JSON.
