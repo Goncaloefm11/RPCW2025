@@ -13,7 +13,7 @@ Este trabalho consistiu na criação de uma ontologia baseada numa história sob
 Foi modelada a história do Eduardo, um estudante de 21 anos oriundo do Porto.
 - **Classes Criadas:** `Pessoa`, `Lingua`, `Curso`, `Universidade`, `Cidade`.
 - **Propriedades de Objeto:** `falaLingua`, `naturalDe`, `inscritoEm`, `parceiroDe`, `leciona`.
-- **Propriedades de Dados:** `temIdade`, `diaDaAula`.
+- **Propriedades de Dados:** `temIdade`, `diaAula`, `temNome`.
 - **Indivíduos:** Eduardo, Carlos, Ana, Helmut Ratz, Hanna e respetivas entidades relacionadas (como línguas e a Universidade do Minho).
 
 ### 2. Questões Respondidas via DL Query
