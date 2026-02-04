@@ -1,0 +1,198 @@
+@prefix : <http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4> .
+
+<http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#falaLingua
+:falaLingua rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#inscritoEm
+:inscritoEm rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#lecionadoPor
+:lecionadoPor rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#naturalDe
+:naturalDe rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#parceiroDe
+:parceiroDe rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#diaAula
+:diaAula rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#nasceu
+:nasceu rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#temIdade
+:temIdade rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#temNome
+:temNome rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/Pessoa
+<http://www.semanticweb.org/gugafm11/ontologies/2026/1/Pessoa> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#Cadeiras
+:Cadeiras rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#Cidade
+:Cidade rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#Curso
+:Curso rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#Lingua
+:Lingua rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#Universidade
+:Universidade rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#Alemao
+:Alemao rdf:type owl:NamedIndividual ,
+                 :Lingua .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#Ana
+:Ana rdf:type owl:NamedIndividual ,
+              <http://www.semanticweb.org/gugafm11/ontologies/2026/1/Pessoa> ;
+     :inscritoEm :Curso_alemao ;
+     :naturalDe :Portugues ;
+     :parceiroDe :Carlos ,
+                 :Eduardo .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#Artes
+:Artes rdf:type owl:NamedIndividual ,
+                :Cadeiras ;
+       :lecionadoPor :Helmut_Ratz .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#Carlos
+:Carlos rdf:type owl:NamedIndividual ,
+                 <http://www.semanticweb.org/gugafm11/ontologies/2026/1/Pessoa> ;
+        :inscritoEm :Curso_alemao ;
+        :naturalDe :Portugues ;
+        :parceiroDe :Ana ,
+                    :Eduardo .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#CienciasHumanas
+:CienciasHumanas rdf:type owl:NamedIndividual ,
+                          :Cadeiras ;
+                 :lecionadoPor :Helmut_Ratz .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#Curso_Biotecnologia
+:Curso_Biotecnologia rdf:type owl:NamedIndividual ,
+                              :Curso .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#Curso_alemao
+:Curso_alemao rdf:type owl:NamedIndividual ,
+                       :Curso ;
+              :lecionadoPor :Helmut_Ratz ;
+              :diaAula "sextas-feiras" .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#Eduardo
+:Eduardo rdf:type owl:NamedIndividual ,
+                  <http://www.semanticweb.org/gugafm11/ontologies/2026/1/Pessoa> ;
+         :falaLingua :Espanhol ,
+                     :Ingles ,
+                     :Portugues ;
+         :inscritoEm :Curso_alemao ,
+                     :Universidade_do_Minho ;
+         :naturalDe :Portugues ;
+         :parceiroDe :Ana ,
+                     :Hanna ;
+         :nasceu "no Porto" ;
+         :temIdade "21 anos" ;
+         :temNome "Eduardo" .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#Espanhol
+:Espanhol rdf:type owl:NamedIndividual ,
+                   :Lingua .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#Hanna
+:Hanna rdf:type owl:NamedIndividual ,
+                <http://www.semanticweb.org/gugafm11/ontologies/2026/1/Pessoa> ;
+       :falaLingua :Alemao ;
+       :inscritoEm :Curso_Biotecnologia ;
+       :naturalDe :Alemao ;
+       :parceiroDe :Eduardo .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#Helmut_Ratz
+:Helmut_Ratz rdf:type owl:NamedIndividual ,
+                      <http://www.semanticweb.org/gugafm11/ontologies/2026/1/Pessoa> ;
+             :falaLingua :Alemao ;
+             :naturalDe :Alemao .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#Ingles
+:Ingles rdf:type owl:NamedIndividual ,
+                 :Lingua .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#Letras
+:Letras rdf:type owl:NamedIndividual ,
+                 :Cadeiras ;
+        :lecionadoPor :Helmut_Ratz .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#Porto
+:Porto rdf:type owl:NamedIndividual ,
+                :Cidade .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#Portugues
+:Portugues rdf:type owl:NamedIndividual ,
+                    :Lingua ;
+           :parceiroDe :Carlos .
+
+
+###  http://www.semanticweb.org/gugafm11/ontologies/2026/1/untitled-ontology-4#Universidade_do_Minho
+:Universidade_do_Minho rdf:type owl:NamedIndividual ,
+                                :Universidade .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
