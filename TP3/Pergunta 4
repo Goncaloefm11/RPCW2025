@@ -1,0 +1,14 @@
+- [ ] Há funcionários que sejam também clientes?
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://example.org/polvo-filosofico#>
+
+SELECT ?pessoa WHERE {
+    ?pessoa rdf:type :Funcionario;
+	          rdf:type :Cliente
+}
+
+
+Tem o Gato
