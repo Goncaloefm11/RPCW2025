@@ -1,0 +1,10 @@
+- [DONE] Quais os ingredientes necessários para os pratos (nome deles)
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://example.org/polvo-filosofico#>
+
+SELECT ?Nomeingredientes WHERE {
+    ?s :temIngrediente ?Nomeingredientes
+}
