@@ -7,7 +7,7 @@
 ---
 
 ## 1. Sinopse
-O objetivo desta ficha foi avaliar competências na especificação e desenvolvimento de ontologias, bem como o seu povoamento e interrogação utilizando tecnologias da Web Semântica[cite: 7]. [cite_start]O trabalho focou-se no domínio médico, relacionando doenças, sintomas, tratamentos e pacientes[cite: 84].
+O objetivo desta ficha foi avaliar competências na especificação e desenvolvimento de ontologias, bem como o seu povoamento e interrogação utilizando tecnologias da Web Semântica.O trabalho focou-se no domínio médico, relacionando doenças, sintomas, tratamentos e pacientes.
 
 ## 2. Povoamento da Ontologia
 Para o povoamento, foi desenvolvido um script em Python (`script.py`) que utiliza a biblioteca `rdflib` para processar os datasets fornecidos:
@@ -31,7 +31,7 @@ Para replicar os resultados:
 1. Executar o script Python: `python3 script.py`.
 2. Carregar o ficheiro `med_doentes.ttl` no GraphDB.
 3. Executar as queries presentes em `sparql.txt` para obter as métricas e listagens solicitadas.
-4. 3. Executar a query de **Diagnóstico (Alínea 12)** no GraphDB como o `CONSTRUCT` e depois com o `INSERT` para que sejam atualizados os dados.
+4. Executar a query de **Diagnóstico (Alínea 12)** no GraphDB como o `CONSTRUCT` e depois com o `INSERT` para que sejam atualizados os dados.
 
 ---
 **Fim do Relatório**
