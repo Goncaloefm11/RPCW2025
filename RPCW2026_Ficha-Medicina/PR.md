@@ -10,9 +10,9 @@
 [cite_start]O objetivo desta ficha foi avaliar competências na especificação e desenvolvimento de ontologias, bem como o seu povoamento e interrogação utilizando tecnologias da Web Semântica[cite: 7]. [cite_start]O trabalho focou-se no domínio médico, relacionando doenças, sintomas, tratamentos e pacientes[cite: 84].
 
 ## 2. Povoamento da Ontologia
-[cite_start]Para o povoamento, foi desenvolvido um script em Python (`script.py`) que utiliza a biblioteca `rdflib` para processar os datasets fornecidos:
-* [cite_start]**Disease_Syntoms.csv**: Criação de instâncias de `:Disease` e `:Symptom`, estabelecendo a relação `:hasSymptom`.
-* **Disease_Description.csv**: Adição de descrições às doenças através de uma nova propriedade de dados[cite: 163].
+Para o povoamento, foi desenvolvido um script em Python (`script.py`) que utiliza a biblioteca `rdflib` para processar os datasets fornecidos:
+**Disease_Syntoms.csv**: Criação de instâncias de `:Disease` e `:Symptom`, estabelecendo a relação `:hasSymptom`.
+* **Disease_Description.csv**: Adição de descrições às doenças através de uma nova propriedade de dados.
 * **Disease_Treatment.csv**: Criação de instâncias de `:Treatment` e associação às doenças via `:hasTreatment`.
 * **doentes.json**: Criação de instâncias de `:Patient` com IDs únicos, nomes e sintomas exibidos (`:exhibitsSymptom`).
 
