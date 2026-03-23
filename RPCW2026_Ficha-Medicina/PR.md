@@ -30,8 +30,8 @@ As queries desenvolvidas encontram-se no ficheiro `sparql.txt`. Destacam-se as s
 Para replicar os resultados:
 1. Executar o script Python: `python3 script.py`.
 2. Carregar o ficheiro `med_doentes.ttl` no GraphDB.
-3. Executar a query de **Diagnóstico (Alínea 12)** no GraphDB como um `INSERT` para persistir as relações de diagnóstico.
-4. Executar as restantes queries presentes em `sparql.txt` para obter as métricas e listagens solicitadas.
+3. Executar as queries presentes em `sparql.txt` para obter as métricas e listagens solicitadas.
+4. 3. Executar a query de **Diagnóstico (Alínea 12)** no GraphDB como o `CONSTRUCT` e depois com o `INSERT` para que sejam atualizados os dados.
 
 ---
 **Fim do Relatório**
