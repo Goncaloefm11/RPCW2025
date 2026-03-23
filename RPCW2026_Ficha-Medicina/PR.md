@@ -1,13 +1,13 @@
 # RPCW2026-Ficha-Medicina
 
 ## Data: 23 de Março de 2026
-## Autor: Gonçalo Magalhães
+## Autor: Gonçalo Magalhães PG61524
 ## Disciplina: Representação e Processamento de Conhecimento na Web
 
 ---
 
 ## 1. Sinopse
-[cite_start]O objetivo desta ficha foi avaliar competências na especificação e desenvolvimento de ontologias, bem como o seu povoamento e interrogação utilizando tecnologias da Web Semântica[cite: 7]. [cite_start]O trabalho focou-se no domínio médico, relacionando doenças, sintomas, tratamentos e pacientes[cite: 84].
+O objetivo desta ficha foi avaliar competências na especificação e desenvolvimento de ontologias, bem como o seu povoamento e interrogação utilizando tecnologias da Web Semântica[cite: 7]. [cite_start]O trabalho focou-se no domínio médico, relacionando doenças, sintomas, tratamentos e pacientes[cite: 84].
 
 ## 2. Povoamento da Ontologia
 Para o povoamento, foi desenvolvido um script em Python (`script.py`) que utiliza a biblioteca `rdflib` para processar os datasets fornecidos:
