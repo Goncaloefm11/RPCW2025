@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="w3-container w3-padding-32">
+    <div class="w3-card-4">
+        <header class="w3-container w3-teal">
+            <h1>Detalhes: {{ id }}</h1>
+        </header>
+        <div class="w3-container w3-padding-16">
+            <table class="w3-table w3-bordered">
+                <tr><th>Propriedade</th><th>Valor</th></tr>
+                {% for d in detalhes %}
+                <tr>
+                    <td><b>{{ d.pred }}</b></td>
+                    <td>{{ d.obj }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        <footer class="w3-container w3-teal w3-padding">
+            <a href="/" class="w3-button w3-white w3-border">Voltar</a>
+        </footer>
+    </div>
+</div>
+{% endblock %}
