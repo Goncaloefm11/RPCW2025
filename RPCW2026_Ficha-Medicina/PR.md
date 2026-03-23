@@ -1,7 +1,7 @@
 # Relatório: RPCW2026-Ficha-Medicina
 
 ## Data: 23 de Março de 2026
-## Autor: [Teu Nome/ID]
+## Autor: Gonçalo Magalhães
 ## Disciplina: Representação e Processamento de Conhecimento na Web
 
 ---
